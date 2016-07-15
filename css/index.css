@@ -1,0 +1,101 @@
+.popover {
+    width: 90px;
+    background-color: #00BFF3;
+    margin-left: -20px;
+    border-radius: 3px !important;
+    border: none;
+}
+
+.popover-content {
+    padding: 9px;
+}
+
+.popover.top .arrow {
+    left: auto;
+    right:12% !important;
+}
+
+.popover.top .arrow:after {
+    border-top-color: #00BFF3;
+}
+
+.select2-container .select2-choice {
+    padding: 7px 10px;
+    height: 45px !important;
+    font-size: 1.2em;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.select2-arrow {
+    padding-top: 7px;
+}
+
+.input-icon > i {
+    margin-top: 15px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.promo-like-text h2, .mix-info h1, .mix-info span, .mix-info small {
+    color: #fff;
+}
+
+.footer h1, .footer p {
+    color: #fff;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.modal-dialog {
+    margin-top: 0%;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-body {
+    font-size: 18pt;
+    text-align: center;
+    color: #8b8c90;
+    padding: 45px;
+}
+
+.modal-footer {
+    border-top: none !important;
+    text-align: center !important;
+    margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+    .modal-footer .btn {
+        width: 120px;
+        margin: 0 45px;
+    }
+}
+
+.modal-footer .btn {
+    width: 120px;
+}
+
+.modal-backdrop.in {
+    opacity: .9 !important;
+}

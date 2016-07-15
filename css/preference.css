@@ -1,0 +1,87 @@
+.preference-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.preference-item {
+    margin-bottom: 30px;
+}
+
+.preference-details img {
+    width: 100%;
+    height: 100%;
+}
+
+.preference-details {
+    max-height:178px;
+    height: 178px;
+    transition-property: all;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.preference-backdrop {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 178px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+    padding: 15px;
+}
+
+.preference-backdrop div {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 12pt;
+}
+
+.preference-check {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    overflow: hidden;
+    border-radius: 50% !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    /*background-color: #fff;*/
+    color: #fff;
+    text-align: center;
+    border: solid 1px transparent;
+    display: none;
+}
+
+.preference-check input {
+    opacity: .1;
+    margin-left: 25px !important;
+}
+
+.hover .preference-details {
+    box-shadow: 0px 0px 27px 4px rgba(0,0,0,0.29);
+}
+
+.hover .preference-check {
+    display: block;
+    background-color: #bacbc3;
+    color: #bacbc3;
+}
+
+.checked .preference-check {
+    background-color: #0caed8;
+    border-color: #fff;
+    color: #fff;
+    display: block;
+}
+
+.unchecked .preference-check {
+    /*background-color: #fff;*/
+}
+
+.loading {
+    text-align: center;
+    color: #00bff3;
+}

@@ -1,0 +1,167 @@
+.popover {
+    width: 90px;
+    background-color: #00BFF3;
+    margin-left: -20px;
+    border-radius: 3px !important;
+    border: none;
+}
+
+.popover-content {
+    padding: 9px;
+}
+
+.popover.top .arrow {
+    left: auto;
+    right:12% !important;
+}
+
+.popover.top .arrow:after {
+    border-top-color: #00BFF3;
+}
+
+.timeline {
+    margin-top: 15px;
+}
+
+.timeline-eventdate {
+    float: left;
+    position: relative;
+    padding-right: 30px;
+    /*width: 180px;*/
+    padding-top: 20px;
+    text-align: right;
+}
+
+.timeline-eventdate .timeline-date {
+    font-size: 14pt;
+    font-family: "Open Sans", sans-serif;
+}
+
+.timeline-event-body {
+    position: relative;
+    padding: 20px;
+    /*margin-left: 180px;*/
+}
+
+.timeline-separator {
+    text-align: center;
+    margin-top: -12px;
+}
+
+.timeline-separator i {
+    float: left;
+    position: relative;
+    left: 52%;
+}
+
+.timeline-separator p span {
+    margin-top: -5px;
+    position: relative;
+    left: 15%;
+    top: -15%;
+}
+
+.datepicker-inline, .table-condensed {
+    width:100% !important;
+}
+
+.datepicker-switch {
+    font-size: 14pt;
+    font-family: "Open Sans", sans-serif;
+    color: #00bff3;
+}
+
+.day {
+    padding: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px;
+    min-width: 50px;
+    border-radius: 50% !important;
+    font-size:12pt;
+}
+
+@media screen and (max-width: 320px) {
+    .day {
+        width: 40px !important;
+        height: 40px !important;
+        max-width: 40px;
+        min-width: 40px;
+    }
+
+    .table-condensed tbody tr {
+        height: 40px !important;
+    }
+}
+
+.active {
+    background-color: #00bff3 !important;
+    border-color: #00bff3 !important;
+}
+
+.calendar-map {
+    padding-top: 30px;
+}
+
+.calendar-map img {
+    max-width:100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.datepicker-days {
+    display: flex !important;
+    justify-content: center;
+}
+
+.table-condensed {
+    max-width: 350px;
+}
+
+.table-condensed tbody tr {
+    height: 50px;
+}
+
+@media screen and (min-width: 992px) {
+    .table-condensed tbody tr {
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .table-condensed tbody tr {
+        height: 50px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .timeline-eventdate {
+        text-align: center;
+    }
+
+    .datepicker-dropdown {
+        width: 98%;
+    }
+}
+
+@media (min-width: 360px) {
+
+    .datepicker-dropdown {
+        width: 350px;
+    }
+}
+
+.promo-like-text h2, .mix-info h1, .mix-info span, .mix-info small {
+    color: #fff;
+}
+
+.footer h1, .footer p, .footer a {
+    color: #fff;
+}
+
+.calendar-separator {
+    background-image: url("../images/timeline.png");
+    height: 26px;
+    width: 5px;
+    margin-top: -5px !important;
+}

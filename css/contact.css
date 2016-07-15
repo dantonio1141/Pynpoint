@@ -1,0 +1,31 @@
+.contact-form {
+    margin-top: 15px;
+}
+
+.map img {
+    max-width: 100%;
+}
+
+.contact-info {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.contact-info li {
+    padding:10px;
+    padding-left: 40px;
+}
+
+.hover {
+    box-shadow: rgba(0,0,0,.2) 0px 0px 5px;
+}
+
+.contact-info p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+
+}

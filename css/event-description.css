@@ -1,0 +1,103 @@
+.event-description {
+
+}
+
+.event-title h1 {
+    color: #585858;
+}
+
+.event-title ul, .event-contact ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+
+}
+
+.event-title ul li, .event-contact ul li {
+    display: inline;
+    padding: 0 12px 0px;
+    color: #8d8d8d;
+}
+
+.event-desc li:first-child {
+    font-weight: bold;
+}
+
+.focus {
+    color: #00bff3 !important;
+}
+
+.event-image img {
+    width: 100%;
+}
+
+.event-prices {
+    padding: 5px 0;
+}
+
+.event-prices p {
+    color: #00bff3;
+    font-weight: bold;
+}
+
+.event-prices p small {
+    color: #8d8d8d;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.event-content {
+    color: #8d8d8d;
+}
+
+.event-map img {
+    width: 100%;
+}
+
+.event-contact {
+    padding:15px 0;
+}
+
+.reserve {
+    padding: 30px;
+}
+
+.reserve a {
+    padding: 14px 40px;
+}
+
+.sidebar-title {
+    font-family: "Open Sans", sans-serif;
+    color: #8d8d8d;
+    font-size: 14pt;
+    text-align: right;
+}
+
+.promo-like-text h2, .mix-info h1, .mix-info span, .mix-info small {
+    color: #fff;
+}
+
+.event-content p {
+    line-height:200%;
+}
+
+.popover {
+    width: 90px;
+    background-color: #00BFF3;
+    margin-left: -20px;
+    border-radius: 3px !important;
+    border: none;
+}
+
+.popover-content {
+    padding: 9px;
+}
+
+.popover.top .arrow {
+    left: auto;
+    right:12% !important;
+}
+
+.popover.top .arrow:after {
+    border-top-color: #00BFF3;
+}

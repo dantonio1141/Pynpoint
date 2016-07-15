@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--<link rel="stylesheet" href="css/justified-nav.css">-->
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="plugins/select2/select2.css">
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/pynpoint.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="plugins/slider-revolution-slider/rs-plugin/css/settings.css">
+    <!-- Page level styles -->
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/datepicker.css">
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/datepicker3.css">
+    <link rel="stylesheet" href="css/event-description.css">
+    <link rel="stylesheet" href="css/calendar.css">
+
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top navbar-pynpoint" style="position: fixed">
+    <div class="container">
+        <div class="navbar-header col-xs-5 col-md-1 col-sm-1" style="z-index: 1">
+            <a class="navbar-brand" href="#"><img src="images/logo-white.png"></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right col-md-2 col-sm-2 col-xs-5" style="z-index: 1">
+            <li class="dropdown user col-xs-6 col-md-3 col-sm-6 pull-right" style="width: 50px">
+                <a class="dropdown-toggle" data-toggle="dropdown"><img src="images/banner.jpg" alt="" width="30" height="30"
+                                                                       class="img-circle"></a>
+                <ul class="dropdown-menu dropdown-dark user-menu">
+                    <li>
+                        <a href="#">Category</a>
+                    </li>
+                    <li>
+                        <a href="#">Edit profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-extended dropdown-notification col-xs-6 col-md-3 col-sm-6 pull-right" style="width: 50px">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell-o" style="position: relative">
+                        <div class="badge badge-pynpoint"></div>
+                    </i>
+                </a>
+                <ul class="dropdown-menu dropdown-dark">
+                    <li>
+                        <div class="badge badge-pynpoint"></div>
+                        <p> Lorem...<br>
+                            <small>small desc</small>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="badge badge-pynpoint"></div>
+                        <p> Lorem...<br>
+                            <small>small desc</small>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="badge badge-pynpoint"></div>
+                        <p> Lorem...<br>
+                            <small>small desc</small>
+                        </p>
+                    </li>
+                    <li class="more">
+                        view all saved events
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="z-index: 1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-collapse collapse col-xs-12">
+            <form class="navbar-form navbar-left form-inline" role="search" style="border: none; box-shadow: none;">
+                <div class="form-group">
+                    <div class="form-icon input-icon right col-md-9 col-xs-9 col-collapsed">
+                        <i class="icon-magnifier" style="text-shadow: none;"></i>
+                        <input class="form-control"
+                               placeholder="Search events and keywords" type="text">
+                    </div>
+                    <div class="col-md-3 col-xs-3 col-collapsed hidden-sm">
+                        <select class="form-control select2">
+                            <option>test</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <ul class="nav navbar-nav col-md-4 col-sm-4 col-xs-12 pull-right center-sm">
+                <li class="col-md-4 col-xs-6 col-collapsed col-md-offset-2 pull-right" style="text-align: center"><a href="calendar.html">Calendar</a></li>
+                <!--<li class="col-md-4 col-xs-6 col-collapsed" style="text-align: center"><a href="contact.php">Contact us</a></li>-->
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="spacer" style="padding: 60px;"></div>
+
+<div class="calendar-range">
+    <div class="container">
+        <div class="row">
+            <!-- BEEGIN Calendar main -->
+            <div class="col-md-8 col-xs-12">
+                <div class="row">
+                    <!-- BEGIN Calendar date range form -->
+                    <form role="form">
+                        <div class="form-body">
+                            <div class="form-group col-md-4 col-xs-12">
+                                <label>Initial Date</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+									    <i class="icon-calendar"></i>
+                                    </span>
+                                    <input type="text" class="form-control date-picker" placeholder="" onfocus="blur();">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-xs-12">
+                                <label>End Date</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+									    <i class="icon-calendar"></i>
+                                    </span>
+                                    <input type="text" class="form-control date-picker" data-provide="datepicker"
+                                           placeholder="" onfocus="blur();">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Calendar date range form -->
+
+<!-- BEGIN Calendar timeline -->
+<div class="container">
+    <div class="timeline col-md-8 col-sm-12 col-xs-12 col-collapsed">
+        <div class="row">
+            <!-- BEGIN Timeline item -->
+            <div class="timeline-event col-md-12 col-collapsed">
+                <div class="timeline-eventdate col-md-4 col-sm-12 col-xs-12">
+                    <div class="timeline-date focus">
+                        Tuesday, June 14
+                    </div>
+                    <div class="timeline-time">
+                        <p>9:25 am</p>
+                    </div>
+                </div>
+                <div class="timeline-event-body col-md-8 col-sm-12 col-xs-12">
+                    <div class="row mix-grid thumbnails">
+                        <div class="col-md-10 col-sm-12 mix category_2 mix_all"
+                             style="display: block;  opacity: 1;">
+                            <div class="mix-inner">
+                                <div class="mix-cover"></div>
+                                <img alt="" src="images/city.png" class="img-responsive">
+
+                                <div class="mix-category col-md-3">
+                                    Sport
+                                </div>
+                                <div class="mix-info col-md-12">
+                                    <h1><a href="#">On the Place you 'll Go !</a> </h1>
+                                    <span>Los Angeles, SF <small>$250</small></span>
+                                </div>
+                                <div class="mix-details">
+                                    <p class="mix-details-date"><a href="#">May 10, 2016</a> </p>
+
+                                    <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                                        sint blanditiis prae</p>
+
+                                    <div class="mix-details-data">
+                                        <ul>
+                                            <li>
+                                                <span class="icon-eye"></span></span> 580
+                                            </li>
+                                            <li>
+                                                <span class="icon-heart"></span> 120
+                                            </li>
+                                            <li>
+                                                <span class="icon-bubble"></span> 22
+                                            </li>
+                                            <li class="pull-right">
+                                                <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+                                                <div style="display: none;">
+                                                    <div  style="display: flex; justify-content: space-around">
+                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Timeline item -->
+
+            <!-- BEGIN Timeline separator -->
+            <div class="timeline-separator col-md-7 col-xs-12 col-md-offset-3 hidden-sm hidden-xs">
+                <p>
+                    <i class="calendar-separator"></i>
+                    <span>Past 2 hours</span>
+                </p>
+            </div>
+            <!-- END Timeline separator -->
+
+            <!-- BEGIN Timeline item -->
+            <div class="timeline-event col-md-12 col-collapsed">
+                <div class="timeline-eventdate col-md-4 col-sm-12 col-xs-12">
+                    <div class="timeline-time">
+                        <p class="focus">9:25 am</p>
+                    </div>
+                </div>
+                <div class="timeline-event-body col-md-8 col-sm-12 col-xs-12">
+                    <div class="row mix-grid thumbnails">
+                        <div class="col-md-10 col-sm-12 mix category_2 mix_all"
+                             style="display: block;  opacity: 1;">
+                            <div class="mix-inner">
+                                <div class="mix-cover"></div>
+                                <img alt="" src="images/vin-diesel.png"
+                                     class="img-responsive">
+
+                                <div class="mix-category col-md-3">
+                                    Art
+                                </div>
+                                <div class="mix-info col-md-12">
+                                    <h1><a href="#">Fast and Furious go to Havana</a> </h1>
+                                    <span>Los Angeles, SF <small>$250</small></span>
+                                </div>
+                                <div class="mix-details">
+                                    <p class="mix-details-date"><a href="#">May 10, 2016</a> </p>
+
+                                    <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                                        sint blanditiis prae</p>
+
+                                    <div class="mix-details-data">
+                                        <ul>
+                                            <li>
+                                                <span class="icon-eye"></span> 580
+                                            </li>
+                                            <li>
+                                                <span class="icon-heart"></span> 120
+                                            </li>
+                                            <li>
+                                                <span class="icon-bubble"></span> 22
+                                            </li>
+                                            <li class="pull-right">
+                                                <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+                                                <div style="display: none;">
+                                                    <div  style="display: flex; justify-content: space-around">
+                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Timeline item -->
+
+            <!-- BEGIN Timeline separator -->
+            <div class="timeline-separator col-md-7 col-xs-12 col-md-offset-3 hidden-sm hidden-xs">
+                <p>
+                    <i class="calendar-separator"></i>
+                    <span>Past 2 hours</span>
+                </p>
+            </div>
+            <!-- END Timeline separator -->
+
+            <!-- BEGIN Timeline item -->
+            <div class="timeline-event col-md-12 col-collapsed">
+                <div class="timeline-eventdate col-md-4 col-sm-12 col-xs-12">
+                    <div class="timeline-time">
+                        <p>9:25 am</p>
+                    </div>
+                </div>
+                <div class="timeline-event-body col-md-8 col-sm-12 col-xs-12">
+                    <div class="row mix-grid thumbnails">
+                        <div class="col-md-10 col-sm-12 mix category_2 mix_all"
+                             style="display: block;  opacity: 1;">
+                            <div class="mix-inner">
+                                <div class="mix-cover"></div>
+                                <img alt="" src="images/surfers.png"
+                                     class="img-responsive">
+
+                                <div class="mix-category col-md-3">
+                                    Art
+                                </div>
+                                <div class="mix-info col-md-12">
+                                    <h1><a href="#">Billibong to Tahiti</a> </h1>
+                                    <span>Los Angeles, SF <small>$250</small></span>
+                                </div>
+                                <div class="mix-details">
+                                    <p class="mix-details-date"><a href="#">May 10, 2016</a> </p>
+
+                                    <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                                        sint blanditiis prae</p>
+
+                                    <div class="mix-details-data">
+                                        <ul>
+                                            <li>
+                                                <span class="icon-eye"></span> 580
+                                            </li>
+                                            <li>
+                                                <span class="icon-heart"></span> 120
+                                            </li>
+                                            <li>
+                                                <span class="icon-bubble"></span> 22
+                                            </li>
+                                            <li class="pull-right">
+                                                <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+                                                <div style="display: none;">
+                                                    <div  style="display: flex; justify-content: space-around">
+                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Timeline item -->
+        </div>
+    </div>
+    <!-- END Calendar timeline -->
+    <!-- BEGIN Sidebar -->
+        <div class="col-xs-12 col-sm-12 col-md-4" style="margin-top: 15px">
+            <div class="calendar-sidebar">
+                <div id="datepicker" data-date-format="dd/mm/yyyy"></div>
+                <input type="hidden" id="hidden_date">
+            </div>
+            <div class="row">
+                <div class="calendar-map col-md-12">
+                    <img src="images/map.png">
+                </div>
+            </div>
+        </div>
+    <!-- END Sidebar -->
+</div>
+<!-- END Calendar main -->
+</div>
+</div>
+</div>
+
+<div class="spacer" style="padding: 30px;"></div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 contact">
+                <h1>PynPoint</h1>
+
+                <p>Miami, FL</p>
+
+                <p>Contact us</p>
+
+                <p>founders@gopoynpoint.com</p>
+            </div>
+            <div class="col-md-4 col-sm-4 social">
+                <h1>&nbsp;</h1>
+
+                <p>&nbsp;</p>
+
+                <p>&nbsp;</p>
+                <a href="#">
+                    <li class="icon-social-facebook fa-2x"></li>
+                </a>
+                <a href="#">
+                    <li class="icon-social-twitter fa-2x"></li>
+                </a>
+                <a href="#">
+                    <li class="icon-social-instagram fa-2x"></li>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 copyright">
+                <h1>&nbsp;</h1>
+
+                <p>&nbsp;</p>
+
+                <p>&nbsp;</p>
+
+                <p>&copy; 2016 All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- BEGIN RevolutionSlider -->
+<script src="plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"
+        type="text/javascript"></script>
+<script src="plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"
+        type="text/javascript"></script>
+<script src="plugins/slider-revolution-slider/revo-ini.js" type="text/javascript"></script>
+<!-- END RevolutionSlider -->
+<!-- BEGIN jQuery MixItUp -->
+<script src="plugins/jquery-mixitup/jquery.mixitup.min.js"></script>
+<script src="js/portfolio.js"></script>
+<!-- END jQuery MixItUp -->
+<!-- BEGIN Select2 -->
+<script src="plugins/select2/select2.min.js"></script>
+<!-- END Select2 -->
+<!-- BEGIN Datepicker -->
+<script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<!-- END Datepicker -->
+<!-- BEGIN Layout -->
+<script src="js/layout.js"></script>
+<!-- END Layout -->
+<script>
+    $(document).ready(function () {
+        Portfolio.init();
+        //Layout.init();
+        $(".select2").select2();
+
+        // Init calendar
+
+        $('.date-picker').datepicker({
+            orientation: 'top'
+        });
+
+        $('#datepicker').datepicker({
+            orientation: 'bottom'
+        });
+        $('#datepicker').on("changeDate", function () {
+            $('#hidden_date').val(
+                $('#datepicker').datepicker('getFormattedDate')
+            );
+        });
+
+        // popover init
+        $("[data-toggle=popover]").popover({
+            html : true,
+            content: function() {
+                return $(this).next().html();
+            },
+            placement: 'auto',
+        })
+    });
+</script>
+</body>
+</html>

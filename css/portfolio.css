@@ -1,0 +1,219 @@
+/* Portfolio */
+/* Portfolio custom */
+
+/* MixItUp */
+.mix-cover {
+  background-color: #000;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.mix-category {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #fff;
+}
+
+.mix-info {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+}
+.mix-info h1 {
+  font-size: 16pt;
+}
+
+.mix-info h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mix-inner img {
+  width:100%;
+  height: 100%;
+}
+
+.mix-details-desc {
+  height: 65px;
+  padding-left:15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.mix-details-date {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.mix-details-date a {
+  text-decoration: none;
+}
+
+.mix-details-data {
+  padding-left: 15px;
+  border-top: 1px solid rgb(238, 238, 238);
+  padding-top: 5px;
+}
+
+.mix-details-data ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+
+.mix-details-data ul li {
+  display: inline-block;
+  color: #cecece;
+  font-size: 9pt;
+  margin-right: 15px;
+}
+
+.mix-details-data ul li span {
+  color: #cecece !important;
+  font-size: 10pt;
+}
+
+/* Portfolio Filter */
+.mix-filter {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.mix-filter li {
+  color: #555;
+  cursor: pointer;
+  padding: 6px 15px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  background: #eee;
+  display: inline-block;
+}
+.mix-filter li:hover,
+.mix-filter li.active {
+  color: #fff;
+  background: #e44f00;
+}
+.mix-grid .mix {
+  opacity: 0;
+  display: none;
+  height:350px;
+}
+
+.mix-details {
+  position: absolute;
+  bottom: -25%;
+  padding-top: 0;
+}
+
+/* Portfolio Hover */
+.mix-grid .mix {
+  position: relative;
+  overflow: hidden; 
+  margin-bottom: 15px;
+}
+.mix-grid .mix .mix-inner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.mix-grid .mix .mix-info {
+  margin-bottom: 0;
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+.mix-grid .mix:hover .mix-info {
+  margin-bottom: 135px;
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+.mix-grid .mix .mix-details {
+  color: #fff;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  position: absolute;
+  background: #fff;
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;  
+}
+.mix-grid .mix:hover .mix-details {
+  bottom: 0;
+  height: 40%;
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;  
+}
+.mix-grid .mix .mix-details h4 {
+  color: #fff;  
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.mix-grid .mix .mix-details p {
+  padding: 0 15px;
+}
+.mix-grid .mix .mix-details i {
+  color: #fff;
+  font-size: 14px;
+}
+.mix-grid .mix a.mix-link, 
+.mix-grid .mix a.mix-preview {
+  color: #555;
+  display: block;
+  cursor: pointer;
+  margin-top: 10px; 
+  position: absolute;
+  padding: 10px 15px;
+  background: #DB3A1B;
+}
+.mix-grid .mix a.mix-preview {
+  left: 50%;
+  margin-left: 5px;
+}
+.mix-grid .mix a.mix-link {
+  right: 50%;
+  margin-right: 5px;
+}
+.mix-grid .mix a.mix-link:hover,
+.mix-grid .mix a.mix-preview:hover {
+  color: #fff;
+  padding: 9px 14px;
+  text-decoration: none;
+  border: solid 1px #eee;
+}
+
+@media screen and (max-width: 1200px) {
+  .promo-like-text h2 {
+    font-size: 1.6em !important;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 992px) { 
+  .mix-grid .mix.col-md-6.col-sm-6 .mix-details {
+    height: 50%;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+  .mix-grid .mix a.mix-link,
+  .mix-grid .mix a.mix-preview {
+    margin-top: 5px;
+  }
+}

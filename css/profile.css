@@ -1,0 +1,139 @@
+.profile-title h4 {
+    text-align: center;
+    color: #585858;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+}
+
+.profile-image {
+    text-align: center;
+}
+
+.profile-image .camera {
+    margin-top: -25px;
+    color: #fff;
+}
+
+.profile-image .camera a {
+    color: #fff;
+}
+
+.profile-image img {
+    width:150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.profile-fields {
+    text-align: center;
+}
+
+.profile-fields .field {
+    padding: 15px;
+    color: #8b8b8b;
+}
+
+.profile-fields .field > i {
+    position: relative;
+    left: 15px;
+}
+
+.profile-fields .field:first-child a {
+    color: #00bff3;
+    font-size: 12pt;
+}
+
+.profile-fields .field a:hover {
+    text-decoration: none;
+}
+
+.profile-fields .field a {
+    color: #8b8b8b;
+    border-bottom: none !important;
+}
+
+.icheckbox_flat-blue {
+    margin-right: 15px;
+}
+
+.editable-buttons > .btn {
+    height: 34px !important;
+    padding: 7px 14px !important;
+}
+
+.profile-buttons {
+    text-align: center;
+}
+
+.profile-buttons .btn {
+    /*margin: 0 15px;*/
+}
+
+.modal-dialog {
+    margin-top: 10%;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-body {
+    font-size: 18pt;
+    text-align: center;
+    color: #8b8c90;
+    padding: 45px;
+}
+
+.modal-footer {
+    border-top: none !important;
+    text-align: center !important;
+    margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+    .modal-footer .btn {
+        width: auto !important;
+        margin: 0 45px;
+    }
+}
+
+.modal-footer .btn {
+    width: 120px;
+}
+
+.modal-backdrop.in {
+    opacity: .9 !important;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.input-profile {
+    border-color: transparent;
+    text-align: center;
+}
+
+.input-profile:focus {
+    border-color: transparent;
+}
+
+@media screen and (max-width: 1023px) {
+    .profile-fields .field {
+        font-size:2.5em;
+    }
+    .profile-fields .field label {
+        font-size:1.0em;
+    }
+    .profile-fields .field:first-child a {
+        font-size:1.5em;
+    }
+}

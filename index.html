@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Pynpoint</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--<link rel="stylesheet" href="css/justified-nav.css">-->
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="plugins/select2/select2.css">
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/pynpoint.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="plugins/slider-revolution-slider/rs-plugin/css/settings.css">
+
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top navbar-pynpoint">
+    <div class="container">
+        <div class="navbar-header col-xs-12 col-sm-2 col-md-3">
+            <a class="navbar-brand" href="index.php"><img src="images/logo-white.png"> </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar1" class=" navbar-nav-flex navbar-collapse collapse">
+            <ul class="nav navbar-nav col-md-6 col-sm-6 col-xs-12">
+                <li class="col-md-4 col-xs-6 col-sm-6 col-collapsed col-md-offset-3"><a href="calendar.html">Calendar</a>
+                </li>
+                <!--<li class="col-md-4 col-xs-6 col-sm-6 col-collapsed"><a href="#contact">Contact us</a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right col-xs-12 col-md-2 col-sm-2">
+                <li style="float: right;"><a data-toggle="modal" href="#login">Signin | up</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="promo-block" id="promo-block" style="width: 100%;">
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-delay="9400"
+                    class="slider-item-1">
+                    <img src="images/banner.jpg" alt="" data-bgfit="cover" style="opacity:0.4 !important;"
+                         data-bgposition="center center" data-bgrepeat="no-repeat">
+
+                    <div class="backdrop"></div>
+
+                    <div class="tp-caption large_text customin customout start col-xs-12 col-md-6"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="center"
+                         data-voffset="60"
+                         data-customin="x:0;y:0;z:0;"
+                         data-customout="x:0;y:0;z:0;"
+                         data-speed="1000"
+                         data-start="500"
+                         data-easing="Back.easeInOut"
+                         data-endspeed="300">
+                        <div class="promo-like-text col-xs-12">
+                            <h2 class="hidden-xs" style="text-align: center;">Discover the world around you</h2>
+
+                            <form class="form-inline" role="search">
+                                <div class="form-group col-md-12 col-xs-12 col-sm-12">
+                                    <div class="form-icon input-icon right col-md-9 col-sm-9 col-xs-12 col-collapsed">
+                                        <i class="icon-magnifier" style="text-shadow: none;"></i>
+                                        <input class="form-control form-pynpoint"
+                                               placeholder="Search events and keywords" type="text">
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-12 col-collapsed">
+                                        <select class="form-control select2 form-pynpoint">
+                                            <option></option>
+                                            <option>test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="navbar navbar-default sub-header" role="navigation" style="margin-bottom: 0;">
+    <div class="container">
+        <div id="navbar2" class=" navbar-nav-flex">
+            <ul class="nav navbar-nav navbar-nav-flex col-md-6 col-xs-12" style="margin: auto">
+                <li class="dropdown col-md-4 col-sm-4 col-xs-4 col-collapsed">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Now <b class="caret"></b></a>
+                    <ul class="dropdown-menu first col-sm-12" style="text-align: left">
+                        <li><a href="#">Last week</a></li>
+                        <li><a href="#">Last month</a></li>
+                        <li><a href="#">Last year</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown col-md-4 col-sm-4 col-xs-4 col-collapsed">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Popular <b class="caret"></b></a>
+                    <ul class="dropdown-menu middle col-sm-12" style="text-align: left">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Most viewed</a></li>
+                        <li><a href="#">Most saved</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown col-md-4 col-sm-4 col-xs-4 col-collapsed">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Category <b class="caret"></b></a>
+                    <ul class="dropdown-menu last col-sm-12" style="min-width: 300px; text-align: left">
+                        <li>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <ul class="mega-column">
+                                            <li><a href="index.html">All</a></li>
+                                            <li><a href="index.html">Art</a></li>
+                                            <li><a href="index.html">Adventure</a></li>
+                                            <li><a href="index.html">Dance</a></li>
+                                            <li><a href="index.html">Food &amp; Drink</a></li>
+                                            <li><a href="index.html">Show &amp; Concerts</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <ul class="mega-column">
+                                            <li><a href="index.html">Sport</a></li>
+                                            <li><a href="index.html">New</a></li>
+                                            <li><a href="index.html">Turism</a></li>
+                                            <li><a href="index.html">Design</a></li>
+                                            <li><a href="index.html">Literature</a></li>
+                                            <li><a href="index.html">Brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio">
+    <div class="container">
+        <div class="row mix-grid thumbnails">
+            <div class="col-md-8 col-sm-12 col-xs-12 mix category_1 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/city.png" class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Sport
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">On the Place you 'll Go !</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+                        <!-- DO NOT EXCEED 130 CHARS -->
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae blanditiis prae </p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_2 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/vin-diesel.png"
+                         class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Art
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Fast and Furious go to Havana</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_2 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/mountain.png" class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Art
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Take pictures on Mountain</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_2 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/open_book.png" class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Art
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Fast and Furious go to Havana</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_2 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/food.png" class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Art
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Pointment with class</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_1 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/family.png" class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Sport
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Out to make gallery</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs-12 mix category_2 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/museum.png"
+                         class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Art
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Visiting the Imperial Museum</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_1 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/creative-wedding.png" class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Sport
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Big wedding</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_1 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/desing.png" class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Sport
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">On the place you'll go !</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mix category_2 mix_all" style="display: block;  opacity: 1;">
+                <div class="mix-inner">
+                    <div class="mix-cover"></div>
+                    <img alt="" src="images/surfers.png"
+                         class="img-responsive">
+
+                    <div class="mix-category col-md-3">
+                        Art
+                    </div>
+                    <div class="mix-info col-md-12">
+                        <h1><a href="#">Billibong to Tahiti</a></h1>
+                        <span>Los Angeles, SF <small>$250</small></span>
+                    </div>
+                    <div class="mix-details">
+                        <p class="mix-details-date"><a href="#">May 10, 2016</a></p>
+
+                        <p class="mix-details-desc">At vero eos et accusamus et iusto odio digniss imos duc sasdimus qui
+                            sint blanditiis prae</p>
+
+                        <div class="mix-details-data">
+                            <ul>
+                                <li>
+                                    <span class="icon-eye"></span> 580
+                                </li>
+                                <li>
+                                    <span class="icon-heart"></span> 120
+                                </li>
+                                <li>
+                                    <span class="icon-bubble"></span> 22
+                                </li>
+                                <li class="pull-right">
+                                    <a data-toggle="popover" title=""><span class="icon-share"></span></a>
+
+                                    <div style="display: none;">
+                                        <div style="display: flex; justify-content: space-around">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="view-more">
+    <div class="container">
+        <div class="row">
+            <a class="btn blue" href="#">View more events</a>
+        </div>
+    </div>
+</div>
+
+<div class="subscribe">
+    <div class="container">
+        <div class="row">
+            <form class="form-inline">
+                <div class="form-group col-md-offset-4 col-md-3">
+                    <input type="email" class="form-control form-pynpoint" placeholder="Enter your email address">
+                </div>
+                <div class="form-group col-md-1">
+                    <input type="submit" class="btn dark" value="Subscribe">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 contact">
+                <h1>PynPoint</h1>
+
+                <p>Miami, FL</p>
+
+                <p>Contact us</p>
+
+                <p>founders@gopoynpoint.com</p>
+            </div>
+            <div class="col-md-4 col-sm-4 social">
+                <h1>&nbsp;</h1>
+
+                <p>&nbsp;</p>
+
+                <p>&nbsp;</p>
+                <a href="#">
+                    <li class="icon-social-facebook fa-2x"></li>
+                </a>
+                <a href="#">
+                    <li class="icon-social-twitter fa-2x"></li>
+                </a>
+                <a href="#">
+                    <li class="icon-social-instagram fa-2x"></li>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 copyright">
+                <h1>&nbsp;</h1>
+
+                <p>&nbsp;</p>
+
+                <p>&nbsp;</p>
+
+                <p>&copy; 2016 All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body login">
+                <div class="content">
+                    <!-- BEGIN LOGIN FORM -->
+                    <form class="login-form" action="index.html" method="post">
+                        <h3 class="form-title">Sign in</h3>
+
+                        <p>Discover, save and share with your friends, the perfect events around you.</p>
+
+                        <div class="alert alert-danger display-hide">
+                            <button class="close" data-close="alert"></button>
+                            <span>Enter any username and password. </span>
+                        </div>
+                        <div class="form-group">
+                            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                            <label class="control-label visible-ie8 visible-ie9">Username</label>
+
+                            <div class="input-icon">
+                                <i class="icon-envelope"></i>
+                                <input class="form-control placeholder-no-fix form-pynpoint padding-l45" type="text"
+                                       autocomplete="off"
+                                       placeholder="Username" name="username"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label visible-ie8 visible-ie9">Password</label>
+
+                            <div class="input-icon">
+                                <i class="icon-lock"></i>
+                                <input class="form-control placeholder-no-fix form-pynpoint padding-l45" type="password"
+                                       autocomplete="off"
+                                       placeholder="Password" name="password"/>
+                            </div>
+                        </div>
+                        <div class="form-actions" style="display: none;">
+                            <label class="checkbox">
+                                <input type="checkbox" name="remember" value="1"/> Remember me </label>
+                            <button type="submit" class="btn green-haze pull-right">
+                                Login <i class="m-icon-swapright m-icon-white"></i>
+                            </button>
+                        </div>
+                        <div class="login-options">
+                            <p>or</p>
+                            <a class="btn blue-steel form-control" href="#">
+                                <i class="fa fa-facebook" style="float: left; font-size: 2em"></i> Facebook
+                            </a>
+                            <a class="btn blue form-control" href="#">
+                                <i class="fa fa-twitter" style="float: left; font-size: 2em"></i> Twitter
+                            </a>
+                            <a class="btn red form-control" href="#">
+                                <i class="fa fa-google-plus" style="float: left; font-size: 2em"></i> Google
+                            </a>
+                        </div>
+                        <div class="create-account">
+                            <p>
+                                Haven't an account? <a href="javascript:;" id="register-btn">Sign up</a>
+                            </p>
+                        </div>
+                    </form>
+                    <!-- END LOGIN FORM -->
+                    <!-- BEGIN REGISTRATION FORM -->
+                    <form class="register-form" action="index.html" method="post">
+                        <h3 class="form-title">Sign Up</h3>
+
+                        <p>Discover, save and share with your friends, the perfect events around you.</p>
+
+                        <div class="form-group">
+                            <label class="control-label visible-ie8 visible-ie9">Username</label>
+
+                            <div class="input-icon">
+                                <i class="icon-user"></i>
+                                <input class="form-control placeholder-no-fix form-pynpoint" type="text"
+                                       autocomplete="off"
+                                       placeholder="Your name" name="username"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label visible-ie8 visible-ie9">Password</label>
+
+                            <div class="input-icon">
+                                <i class="icon-envelope"></i>
+                                <input class="form-control placeholder-no-fix form-pynpoint" type="email"
+                                       autocomplete="off"
+                                       id="register_password" placeholder="Email address" name="password"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label visible-ie8 visible-ie9">Your Password</label>
+
+                            <div class="controls">
+                                <div class="input-icon">
+                                    <i class="icon-lock"></i>
+                                    <input class="form-control placeholder-no-fix form-pynpoint" type="password"
+                                           autocomplete="off"
+                                           placeholder="Create a password" name="rpassword"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" id="register-submit-btn" class="btn blue form-control">
+                                Sign Up <i class="m-icon-swapright m-icon-white"></i>
+                            </button>
+                            <p style="margin-top: 30px">Enjoy with us!</p>
+                            <a style="font-size: .6em;" id="register-back-btn">Back</a>
+                        </div>
+                    </form>
+                    <!-- END REGISTRATION FORM -->
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<!-- BEGIN RevolutionSlider -->
+<script src="plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"
+        type="text/javascript"></script>
+<script src="plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"
+        type="text/javascript"></script>
+<script src="plugins/slider-revolution-slider/revo-ini.js" type="text/javascript"></script>
+<!-- END RevolutionSlider -->
+<!-- BEGIN jQuery MixItUp -->
+<script src="plugins/jquery-mixitup/jquery.mixitup.min.js"></script>
+<script src="js/portfolio.js"></script>
+<!-- END jQuery MixItUp -->
+<!-- BEGIN Select2 -->
+<script src="plugins/select2/select2.min.js"></script>
+<!-- END Select2 -->
+<!-- BEGIN Layout -->
+<script src="js/layout.js"></script>
+<!-- END Layout -->
+<!-- BEGIN Login -->
+<script src="js/login.js"></script>
+<!-- END Login -->
+<script>
+    $(document).ready(function () {
+
+        Portfolio.init();
+
+        Layout.init();
+
+        $(".select2").select2({
+            placeholder: "Filter",
+            allowClear: true
+        });
+
+        Login.init();
+
+        $(".tp-banner-container").css('height',$(window).height());
+
+        // popover demo
+        $("[data-toggle=popover]").popover({
+            html: true,
+            content: function () {
+                return $(this).next().html();
+            },
+            placement: 'auto',
+        })
+    });
+</script>
+</body>
+</html>
